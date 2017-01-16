@@ -1,0 +1,52 @@
+Lars Norberg:
+	- 2017-01-07-2347: - added party and raid unitframe
+	- 2016-07-24-1833: - added zhTW locale by 公孟一文
+	- 2016-07-24-1331: - fixed number abbreviations on the XP bar for zhCN clients
+	- 2016-07-23-2145: - added zhCN entry for the stance button tooltip text
+	- 2016-07-23-1930: - Updated combo points for Rogues in Legion
+	- 2016-20-21-0237: - fixed some scaling issues in the custom popups - fixed a problem related to figuring out the graphics resolution when UI scaling was enabled in Legion
+	- 2016-07-20-2259: - Garrison Minimap button is back
+	- 2016-07-20: - fixed the mirrortimers and timertrackers. turns out blizzard had changed the names and keys of some of the textures
+	- 2016-07-20-1844: - fixed a tooltip bug when hovering over the stance button
+	- 2016-07-20-1835: - attempted to fix a bug that would occur when other addons used blizzard's TimerTracker system - added the stance bar button's tooltip text to the enUS locale
+	- 2016-07-20-1725: - fixed a tooltip incompatibility with the addon SavedInstances - fixed some problems with the locale handler that would prevent other locales than enUS from functioning - added better number abbreviations for zhCN clients
+	- 2016-07-20-1500: - bumped interface version to 7.0.3 - fixed the "big bar in the middle of the screen" bug - fixed an issue that would display a number instead of the red error messages on-screen - added zhCN localization by 公孟一文 - fixed the zone ability button
+	- 2016-07-18-1249: - fixed a localization bug that would cause pre-Cata clients to malfunction if the UI scale was "incorrect"
+	- 2016-07-17-1436: - added a popup to request whether or not you prefer to have the main chat window automatically sized and positioned - added the chat commands "/diabolic autoscale", "/diabolic autoposition" and "/diabolic resetsetup"
+	- 2016-07-16-1003: - toned down the glare on the minimap overlay texture - removed some debug output from the actionbar module that would show up at the start of pet battles - removed the annoying green paw texture that would appear on pet battle chat output frames - fixed a weird bug that sometimes would occur in the unitframe threat element
+	- 2016-07-16-0027: - added frequent updates for unitframes whose unit didn't fire in events, such as ToT
+	- 2016-07-15-1802: Fixed issues that would break the actionbars in certain clients
+	- 2016-07-15-1359: - fixed action keybind in pet battles - added stack size / spell charges to the actionbuttons - added more updates to ToT unit names - moved the player's alternate power down, as it often was in the way of the target frame (for example when the blood moon event was active)
+	- 2016-07-14-1914: Trying to work around a nil bug in the chat window module related to the chat icons. Unable to reproduce it so far, though.
+	- 2016-07-13-2151: added combopoints and anticipation
+	- 2016-07-13-1317: removed the autominimizing of the quest tracker in combat, as this was causing a taint if the user moved from one subzone to another while having quest objectives visible on the WorldMap and opening it. Now THAT took some time to figure out!
+	- 2016-07-13-1040: - doubled the brightness of the threat texture
+	- 2016-07-12-2135: - Added threat coloring for all existing units with the exception of the player (that's coming later!)
+	- 2016-07-12-1347: - moved the durability frame, ghost release frame and vehicle seat indicators - fixed issues that prevented new buttons in the stance bar from being clicked when learning new forms or changing talent specialization
+	- update warrior action paging, which seems to have been wrong
+	- fixed a typo that caused the UI not to load
+	- - restyled and repositioned the ExtraActionButton1 and the Draenor Zone ability button. - added some temporary statusbar texts for the targetframe and player orbs
+	- Fixed an issue that would produce a bug if more than one mirrortimer (breath, fatigue, etc) was visible on-screen at once. Also adjusted the coloring to be darker and easier to see.
+	- stance (and other) buttons should now properly get a gold border to indicate when they are checked
+	- - fixed a problem with the actionbutton overlay glows - moved the mirrortimer (breath, fatigue, feign death etc) slightly downwards, to make room for the upcoming targetframe auras - moved the warning text ("You can't do that yet" etc) slightly down, to not be in the way of the mirror timer or the target frame - slightly lowered the padding between the buttons on the side bars, pet bar and stance bar
+	- - added a stance bar...'ish - fixed a bug in the tracker module that would sometimes taint the worldmap's POI buttons if the worldmap was opened during combat. - fixed a bug that would sometimes cause the focus frame powerbar to become stupid long instead of disappearing
+	- added MoveAnything's game menu button to our styled game menu
+	- - fixed an issue in Legion/WoD where the focus frame wouldn't reposition itself when the pet frame was shown - fixed an issue in Legion where the castbar texture would be pure green, instead of light transparent white
+	- - chat should be visible for 15 seconds before fading, up from 5 - added tot and focus unitframes - fixed some issues with the unitframe castbars where they sometime wouldn't update properly - fixed a framelevel issue with the unitframe castbars that would render them above their border - fixed a problem that sometimes would occur with female unitframe portraits
+	- - fixed an issue where the chat window module would disable itself if Prat-3.0 was in the addon list, even if it wasn't enabled
+	- - added a pet action bar - adjusted how the side bar resizes and moves themselves - made the actionbar menu's backdrop darker, to make it less confusing when shown over an open quest tracker - fixed a bug that would make it impossible to dismiss or rename a pet through its unitframe after a /reload - all unitframe elements (like the portraits) should now be update also when first shown
+	- - Removed some debugging output that would appear when clicking on the chat button with the mouse.
+	- - Added the XP bar - Changed the shadow on the chat font to match the UIs general light direction - Added some methods to the custom StatusBar object to accomodate the new XP bar
+	- Fixed the chat button becoming disabled
+	Fixed an issue where the chat button would sometimes become disabled after the input box was automatically hidden in classic style mode.
+	- Removed flash animations from chat bubbles
+	Removed flash animations from chat bubbles, as this was causing client crashes for some users.
+	- Chat module disabled if Prat-3.0 is loaded.
+	- "canexitvehicle" macro option doesn't exist before MoP.
+	- Settings should now save properly between sessions for all clients.
+	- Reverted the build number to recognize Legion to a lower value.
+	- text edit
+	- fixed the repository folder structure
+	- comment changes
+	- first
+	- Initial commit
